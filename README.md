@@ -1,27 +1,28 @@
-**CSV Data Analysis Using SQL**
-**Overview**
+# CSV Data Analysis Using SQL
 
-This project shows how to import CSV files into a SQL database and perform common data analysis operations using SQL.
+## Overview
+This project demonstrates how to import CSV files into a SQL database and perform common data analysis operations using SQL.
 
-**Tools Used**
-MySQL
-SQL
-CSV files
+## Tools Used
+- MySQL  
+- SQL  
+- CSV files  
 
-**Key Operations**
-Loading CSV data into tables
-Filtering and sorting data
-Aggregations using SUM, COUNT, AVG
-GROUP BY and HAVING
-Subqueries and joins
+## Key Operations
+- Loading CSV data into tables  
+- Filtering and sorting data  
+- Aggregations using `SUM`, `COUNT`, `AVG`  
+- `GROUP BY` and `HAVING`  
+- Subqueries and joins  
 
+## Purpose
+To practice real-world SQL queries and build a strong SQL portfolio project for Data Analyst roles.
 
-**Purpose**
-To practice real-world SQL queries and build a strong SQL portfolio project for Data Analyst roles
+## SQL Queries
 
-**QUERIES**
-
-**CREATE TABLE read_csv (
+### Create Table
+```sql
+CREATE TABLE read_csv (
     order_id INT,
     amount INT,
     profit INT,
@@ -33,8 +34,8 @@ To practice real-world SQL queries and build a strong SQL portfolio project for 
     customer_name VARCHAR(100),
     state VARCHAR(50),
     city VARCHAR(50),
-    year_month varchar(7));
-    
+    year_month VARCHAR(7)
+);
 LOAD DATA INFILE
 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/Sales Dataset_new.csv'
 INTO TABLE read_csv
@@ -42,7 +43,3 @@ FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
-);**
-
-
-
